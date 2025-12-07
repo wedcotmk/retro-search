@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Retro WDW Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ---- GOOGLE-STYLE CLEAN UI ---- */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #444;
+  font-weight: 300;
+}
+
+#searchBox {
+  width: 600px;
+  max-width: 90%;
+  padding: 14px 18px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+#searchBox:focus {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+#results {
+  width: 650px;
+  max-width: 95%;
+  margin-top: 25px;
+}
+
+.result {
+  background: white;
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin-bottom: 18px;
+}
+
+.result:hover {
+  box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+.title-row {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.ep-title {
+  font-weight: bold;
+}
+
+.ep-meta {
+  color: #777;
+  margin-left: 8px;
+}
+
+.snippet {
+  margin: 8px 0 12px;
+  line-height: 1.4em;
+}
+
+.jump {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.jump:hover {
+  text-decoration: underline;
+}
+
+.more-results {
+  margin: 10px 0;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Retro WDW Podcast Search</h1>
+
+<input type="text" id="searchBox" placeholder="Search transcripts… (e.g., monorail, Epcot, Horizons)" />
+
+<div id="results"></div>
+
+<!-- MiniSearch Library -->
+<script src="minisearch.min.js"></script>
+
+<!-- Your Search Logic -->
+<script src="search.js"></script>
+
+</body>
+</html>
